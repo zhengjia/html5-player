@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>video tag</title>
+<link href="layout.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js" type="text/javascript"></script>
+<script src="video_control.js" type="text/javascript"></script>
+</head>
+<body>
+  <div id="container">
+  <div id="user_nav">Login | Register
+  </div> 
+
+    Video URL(OGG/OGV format): 
+  <input value="http://upload.wikimedia.org/wikipedia/commons/e/ed/Boys_beware.ogv" size="60" id="video-url" type="text" />
+  <input value="Load" id="loadButton" type="button" /> 
+  <br /> 
+  Preview: <br /> 
+  <video src="http://upload.wikimedia.org/wikipedia/commons/e/ed/Boys_beware.ogv" class="previewVideo" autobuffer="true" >Your browser does not support ogv video</video> 
+  <div> 
+    <button id="playButton">Play</button> 
+    <button id="pauseButton">Pause</button> 
+    <button id="markStart">Mark Start</button> 
+    <button id="markEnd">Mark End</button> 
+    <button id="clear">Clear</button> 
+    <button id="muteButton">Mute</button> 
+    <button id="unmuteButton">Unmute</button> 
+    <button id="seekButton">Seek</button> Seekto: <input size="3" id="seekTo" type="text" /> <br /> 
+    <p> 
+      Current Time: <span id="currentTime">0</span> Start: <span id="start-time"></span>  End: <span id="end-time">612.4</span>  
+    </p>  
+ 
+  </div> 
+ </div>
+
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+body {
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+  background-color: #FFF;
+}
+
+body {
+  background-color: #4B7399;
+}
+
+#container {
+  width: 90%;
+  margin: auto;
+  background-color: #FFF;
+  padding: 20px;
+  border: solid 1px black;
+}
+
+#user_nav {
+  float: right;
+}
