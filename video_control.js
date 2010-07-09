@@ -1,22 +1,22 @@
 $(function() {
 
-    var previewVideo_element = $(".previewVideo")[0];
+    
     var video_element = $("video")[0];
     
-	$('video').bind('timeupdate',function(){
+	$(video_element).bind('timeupdate',function(){
 		var timeTemp = video_element.currentTime.toFixed(1);
 		$('#currentTime').text(timeTemp);
 	});
 	
 	//set the default start time of a clip; set the default end time in load event
-    $(".previewVideo").bind("canplay", function() { 
-        $("#end-time").text(previewVideo_element.duration.toFixed(1)); 
+    $(video_element).bind("canplay", function() { 
+        $("#end-time").text(video_element.duration.toFixed(1)); 
         $("#start-time").text(0.0);
     }, true);
 	
 	$("#loadButton").click(function(){
-		previewVideo_element.src=$("#video-url").val();
-	    previewVideo_element.load();	
+		video_element.src=$("#video-url").val();
+	    video_element.load();	
 	});
 
 	$("#playButton").click(function(){
